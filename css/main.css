@@ -1,0 +1,662 @@
+/* --------------------- End Main Rulez Section ---------------------  */
+
+:root {
+    --bs-navbar-color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container .heading h2 {
+    color: #1e1e1e;
+    font-size: 48px;
+    font-weight: 700;
+    position: relative;
+}
+
+.container .heading h2::after {
+    content: "";
+    position: absolute;
+    border: 2px solid #0078ff;
+    width: 40px;
+    height: 3px;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container .heading p {
+    color: #4e4e4e;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* --------------------- End Main Rulez Section ---------------------  */
+
+
+
+
+
+/* --------------------- Start Loading Section ---------------------  */
+
+#preloader {
+    background-color: #000;
+    background-size: 10%;
+    background-image: url(../images/icon/preloader.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 99999999999999999;;
+}
+/* 
+#preloader .load {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+/* --------------------- End Loading Section ---------------------  */
+
+
+
+
+
+
+/* --------------------- Start Navbar Section ---------------------  */
+
+.navbar {
+    color: #fff;
+    z-index: 999999;
+    background-color: transparent;
+    transition: all 0.5s linear;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.navbar .navbar-nav .nav-item a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFF;
+    padding-bottom: 5px;
+    margin-left: 25px;
+    position: relative;
+}
+
+.navbar .navbar-nav a.active {
+    color: #fff;
+    position: relative;
+}
+
+.navbar .navbar-nav .nav-item a.active::before,
+.navbar .navbar-nav .nav-item a:hover::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    width: 50%;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.5s linear;
+}
+
+.navbar .dropdown a {
+    color: #333;
+}
+
+/* 
+    fab fa-git-square 
+    fab fa-github
+*/
+
+.navbar .dropdown .dropdown-menu li a {
+    color: #333;
+    border: none;
+    font-size: 16px;
+    background-color: transparent;
+    margin-left: 0;
+}
+
+.navbar .dropdown ul li a:hover {
+    border: none;
+    color: #0078ff;
+}
+
+@media (max-width: 991px) {
+
+    .navbar.bar{
+        color: var(--bs-navbar-color);
+    }
+
+    .navbar .navbar-nav {
+        width: 100%;
+        height: 80vh;
+        background-color: #fdfdfd;
+        color: #333;
+    }
+
+    .navbar .navbar-nav .nav-item a {
+        font-size: 18px;
+        font-weight: 500;
+        color: #333;
+        padding-bottom: 5px;
+        margin-left: 25px;
+        position: relative;
+        transition: all 0.5s linear;
+    }
+
+    .navbar .navbar-nav .nav-item a.active::before,
+    .navbar .navbar-nav .nav-item a:hover::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 35px;
+        height: 2px;
+        background-color: #333;
+        transition: all 0.5s linear;
+    }
+
+    .navbar .navbar-nav .nav-item a:hover {
+        padding-left: 30px;
+    }
+}
+
+
+.navbar.sticky{
+    background-color: #333;
+}
+
+/* --------------------- End Navbar Section ---------------------  */
+
+
+
+
+/* --------------------- Start Header Section ---------------------  */
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.896), rgba(0, 0, 0, 0.30333)), url(../images/hero-bg.jpg);
+    background-size: cover;
+    background-position: 100% 100%;
+    color: #fff;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.header .inner {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header h2 {
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.header span {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+@media (max-width: 765px) {
+    .header h2 {
+        font-size: 62px;
+    }
+
+    .header span {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 675px) {
+    .header h2 {
+        font-size: 55px;
+    }
+
+    .header span {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 570px) {
+    .header h2 {
+        font-size: 50px;
+    }
+
+    .header span {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 530px) {
+    .header h2 {
+        font-size: 40px;
+    }
+
+    .header span {
+        font-size: 25px;
+    }
+}
+
+
+/* --------------------- End Header Section ---------------------  */
+
+
+
+
+
+
+
+
+
+/* --------------------- Start About Section ---------------------  */
+
+.about .container .box {
+    padding: 4rem ;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.about .container .progresses .progress {
+    border-radius: 0;
+}
+
+.about .container .text .heading h3 {
+    position: relative;
+    color: #1e1e1e;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.about .container .text .heading h3::after {
+    content: "";
+    position: absolute;
+    border: 2px solid #0078ff;
+    width: 100px;
+    left: 0;
+    top: 40px;
+}
+
+.about .container .text p{
+    color: #4e4e4e;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* --------------------- End About Section ---------------------  */
+
+
+
+
+
+/* --------------------- Start Services Section ---------------------  */
+
+.services .container .ser-box .card {
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #f4f4f4;
+    border-radius: 30px;
+}
+
+.services .container .ser-box .card .card-body .icon {
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    box-shadow: 0 0 0 10px #0078ff;
+    transition: all 0.3s linear;
+}
+
+.services .container .ser-box .card:hover .card-body .icon {
+    background-color: #0078ff;
+    box-shadow: 0 0 0 10px rgba(0, 119, 255, 0.39);
+}
+
+.services .container .ser-box .card .card-body .icon i {
+    color: #1e1e1e;
+    font-size: 40px;
+    transition: all 0.3s linear;
+}
+
+.services .container .ser-box .card:hover .card-body .icon i {
+    color: #fff;
+}
+
+.services .container .ser-box .card:hover .card-body p {
+    color: #4e4e4e;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* --------------------- End Services Section ---------------------  */
+
+
+
+
+
+/* --------------------- Start Services Section ---------------------  */
+
+.counter {
+    background-image: linear-gradient(rgba(0, 119, 255, 0.896), rgba(0, 119, 255, 0.30333)), url(../images/counters-bg.jpg);
+    background-size: cover;
+    background-position: 100% 100%;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+.counter .container .box .icon {
+    background-color: transparent;
+    width: 80px;
+    height: 80px;
+    font-size: 1.6rem;
+    border: 10px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --------------------- End Services Section ---------------------  */
+
+
+
+
+
+/* --------------------- Start Portofolio Section ---------------------  */
+
+.portofolio {
+    background-color: #f5f5f5;
+}
+
+.portofolio .container .box .card {
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.portofolio .container .box .card .image  {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+.portofolio .container .box .card .image img {
+    width: 100%;
+    transition: all 0.5s linear;
+}
+
+.portofolio .container .box .card:hover .image img {
+    transform: scale(1.3);
+}
+
+.portofolio .container .box .card .card-body .text .inner h4 {
+    color: #1e1e1e;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.portofolio .container .box .card .card-body .text .inner p {
+    font-size: 14px;
+    color: #4e4e4e;
+}
+
+.portofolio .container .box .card .card-body .text .inner p span {
+    color: #0078ff;
+}
+
+.portofolio .container .box .card .card-body .text .icon {
+    background-color: #fff;
+    color: #0078ff;
+    width: 40px;
+    height: 40px;
+    font-size: 1.3rem;
+    border: 2px solid #0078ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --------------------- End Portofolio Section ---------------------  */
+
+
+
+
+
+/* --------------------- Start Carousel Section ---------------------  */
+
+.carousel {
+    padding: 100px 0;
+    background-image: linear-gradient(rgba(0, 119, 255, 0.896), rgba(0, 119, 255, 0.30333)), url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-position: 100% 100%;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+.carousel .slide .carousel-inner .carousel-item .image  {
+    margin-bottom: 30px;
+}
+
+.carousel .slide .carousel-inner .carousel-item .image img  {
+    width: 15%;
+}
+
+
+.carousel .slide {
+    position: relative;
+}
+
+.carousel .slide .carousel-indicators {
+    position: absolute;
+    top: 430px;
+}
+
+.carousel .slide .carousel-indicators .indicator{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+/* --------------------- End Carousel Section ---------------------  */
+
+
+
+
+
+/* --------------------- Start Blog Section ---------------------  */
+
+.blog {
+    background-color: #f5f5f5;
+}
+
+.blog .container .box .card  {
+    box-shadow: 10px 15px 8px -10px rgba(0, 0, 0, 0.1);
+    border-color: #f1f1f1;
+    /* position: relative; */
+}
+
+.blog .container .box .card .card-gat{
+    position: relative;
+
+}
+
+.blog .container .box .card .card-gat .gat {
+    position: absolute;
+    background-color: #0078ff;
+    color: #f1f1f1;
+    top: -38px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.blog .container .box .card .card-body a {
+    color: #1e1e1e;
+    font-weight: 500;
+    transition: all 0.4s linear;
+}
+
+.blog .container .box .card .card-body a h4 {
+    font-size: 20px;
+}
+
+.blog .container .box .card .card-body a:hover {
+    color: #0078ff;
+}
+
+.blog .container .box .card .card-body .text .inner p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #4e4e4e;
+}
+
+.blog .container .box .card .inner .image {
+    width: 40px;
+    height: 40px;
+}
+
+
+/* --------------------- End Blog Section ---------------------  */
+
+
+
+
+
+/* --------------------- Start Portofolio Section ---------------------  */
+
+.contact {
+    padding: 100px 0;
+    background-image: linear-gradient(rgba(0, 119, 255, 0.896), rgba(0, 119, 255, 0.30333)), url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-position: 100% 100%;
+    background-attachment: fixed;
+}
+
+.contact .inner {
+    background-color: #f1f1f1;
+}
+
+.contact .container .inner .heading h3 {
+    position: relative;
+    color: #1e1e1e;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.contact .container .inner .heading h3::after {
+    content: "";
+    position: absolute;
+    border: 2px solid #0078ff;
+    width: 100px;
+    left: 0;
+    top: 40px;
+}
+
+.contact .container .inner form textarea {
+    height: 150px;
+}
+
+.contact .container .inner form .icon button:hover {
+    margin: 10px;
+    border: 1px solid rgba(0, 119, 255, 0.603);
+}
+
+.contact .container .text p{
+    color: #4e4e4e;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.contact .container .text .information .info i{
+    color: #0078ff;
+    font-size: 14px;
+}
+
+.contact .container .text .information .info span{
+    color: #4e4e4e;
+    font-size: 16px;
+}
+
+.contact .container .text .icon {
+    background-color: #fff;
+    color: #4e4e4e;
+    width: 40px;
+    height: 40px;
+    font-size: 1.3rem;
+    border: 2px solid #0078ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s linear;
+}
+
+.contact .container .text .icon:hover {
+    background-color: #0078ff;
+    color: #fff;
+}
+
+/* --------------------- End Portofolio Section ---------------------  */
+
+
+
+
+
+
+/* --------------------- Start Portofolio Section ---------------------  */
+
+.footer {
+    background-color: #0062d3;
+    color: #fff;
+}
+
+.footer a {
+    color: #fff;
+}
+
+/* --------------------- End Portofolio Section ---------------------  */
+
+
+
+
+
+
+#myBtn {
+    /* display: none;  */
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 30px;
+    z-index: 9999999999999999999999999999;
+    border: none;
+    outline: none;
+    background-color: #0078ff;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px 15px 25px;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: all 0.2s linear;
+}
+
+#myBtn:hover {
+    background-color: rgba(0, 119, 255, 0.685);
+}
+
+#myBtn i {
+    position: absolute;
+    bottom: 10px;
+    right: 13px;
+}
